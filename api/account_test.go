@@ -24,6 +24,8 @@ func TestGetAccountAPI(t *testing.T) {
 	user, _ := randomUser(t)
 	account := randomAccount(user.Username)
 
+	// forcing a new deployment TODO: remove
+
 	testCases := []struct {
 		name          string
 		accountID     int64
